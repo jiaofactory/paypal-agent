@@ -330,4 +330,4 @@ If this skill helps you monetize your AI agents, please star it on ClawHub!
 
 **[Buy on Gumroad - $4.99](https://gumroad.com)**
 
-*💙 代码已在 GitHub 开源。购买支持开发者并获得一键安装包！*
+*💙 Love this project? Support us on Gumroad for the packaged version with one-click installation!*
