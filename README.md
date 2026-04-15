@@ -300,7 +300,7 @@ ngrok http 5000
 
 ## 🤝 Support
 
-- 📧 Email: support@jiaofactory.com
+- 📧 Email: 99.jiaojiao.99@gmail.com
 - 🐛 Issues: [GitHub Issues](https://github.com/jiaofactory/paypal-agent/issues)
 - 💬 Discussions: [ClawHub Community](https://clawhub.ai/community)
 
