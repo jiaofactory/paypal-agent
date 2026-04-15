@@ -2,8 +2,8 @@
 
 **The first payment skill on ClawHub!** Enable your AI agents to accept PayPal payments, generate payment links, and receive instant payment notifications.
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://clawhub.ai)
-[![Price](https://img.shields.io/badge/price-%249.99-green.svg)](https://clawhub.ai)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/jiaofactory/paypal-agent)
+[![Price](https://img.shields.io/badge/price-Free-green.svg)](https://github.com/jiaofactory/paypal-agent)
 [![Python](https://img.shields.io/badge/python-3.8+-yellow.svg)](https://python.org)
 [![PayPal](https://img.shields.io/badge/paypal-REST%20API-blue.svg)](https://developer.paypal.com)
 
@@ -328,4 +328,6 @@ If this skill helps you monetize your AI agents, please star it on ClawHub!
 4. **🤖 AI-Native** - Built for agent workflows
 5. **🌐 First-Mover** - No competition on ClawHub!
 
-**[Buy Now - $9.99](https://clawhub.ai/skills/paypal-agent)**
+**[Buy on Gumroad - $4.99](https://gumroad.com)**
+
+*💙 代码已在 GitHub 开源。购买支持开发者并获得一键安装包！*
