@@ -346,6 +346,6 @@ If this skill helps you monetize your AI agents, please star it on ClawHub!
 4. **🤖 AI-Native** - Built for agent workflows
 5. **🌐 First-Mover** - No competition on ClawHub!
 
-**[Buy on Gumroad - $4.99](https://gumroad.com)**
+**[Buy on Gumroad - $4.99](https://jiaofactory.gumroad.com/l/wwmxqv)**
 
 *💙 Love this project? Support us on Gumroad for the packaged version with one-click installation!*
