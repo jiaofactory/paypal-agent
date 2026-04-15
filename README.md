@@ -262,8 +262,8 @@ ngrok http 5000
 
 | License | Price | Includes |
 |---------|-------|----------|
-| **Personal** | $9.99 | Full source code, updates, community support |
-| **Agency** | $49.99 | Everything + priority support, multi-agent license |
+| **Open Source** | Free | Full source code on GitHub |
+| **Gumroad** | $4.99 | Packaged zip, quick install, updates |
 
 **ROI Calculation:**
 - Time saved: ~10 hours of integration
