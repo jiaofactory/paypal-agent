@@ -1,0 +1,63 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║     ██████╗  █████╗ ██╗   ██╗██████╗  █████╗ ██╗                         ║
+║     ██╔══██╗██╔══██╗╚██╗ ██╔╝██╔══██╗██╔══██╗██║                         ║
+║     ██████╔╝███████║ ╚████╔╝ ██████╔╝███████║██║                         ║
+║     ██╔═══╝ ██╔══██║  ╚██╔╝  ██╔══██╗██╔══██║██║                         ║
+║     ██║     ██║  ██║   ██║   ██████╔╝██║  ██║███████╗                    ║
+║     ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚══════╝                    ║
+║                                                                          ║
+║     ██████╗  █████╗ ██╗   ██╗███╗   ███╗███████╗███╗   ██╗████████╗     ║
+║     ██╔══██╗██╔══██╗╚██╗ ██╔╝████╗ ████║██╔════╝████╗  ██║╚══██╔══╝     ║
+║     ██████╔╝███████║ ╚████╔╝ ██╔████╔██║█████╗  ██╔██╗ ██║   ██║        ║
+║     ██╔═══╝ ██╔══██║  ╚██╔╝  ██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║        ║
+║     ██║     ██║  ██║   ██║   ██║ ╚═╝ ██║███████╗██║ ╚████║   ██║        ║
+║     ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝        ║
+║                                                                          ║
+║     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   ║
+║                                                                          ║
+║     💳 Accept Payments via PayPal in Your AI Agent Workflows             ║
+║                                                                          ║
+║     Create payment links • Check status • Webhook notifications          ║
+║                                                                          ║
+║     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   ║
+║                                                                          ║
+║     [ 🛒  Install on ClawHub  ]  [ 📖  Documentation  ]                  ║
+║                                                                          ║
+║     Version 0.1.0  •  $9.99  •  by Jiao Factory                          ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════
+                           VISUAL SPECIFICATION
+═══════════════════════════════════════════════════════════════════════════
+
+RECOMMENDED SIZE: 1280 x 640 pixels (2:1 aspect ratio)
+ALTERNATIVE: 1200 x 630 pixels (Facebook/Twitter card size)
+
+COLOR SCHEME:
+  • Background: Deep Navy (#0A1628) to Royal Blue (#1E3A5F) gradient
+  • Primary Accent: PayPal Blue (#003087)
+  • Secondary Accent: Bright Cyan (#00D4FF)
+  • Text: White (#FFFFFF) with subtle glow
+  • Money Green accent for "$9.99" (#00D26A)
+
+ELEMENTS TO INCLUDE:
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │  [PayPal Logo]  +  [Payment Card Icon]  +  [Webhook Icon]          │
+  │                                                                     │
+  │  Floating animated coins/USD symbols around the edges               │
+  │  Subtle circuit/network pattern in background                       │
+  │  Glowing "payment success" checkmark accent                         │
+  └─────────────────────────────────────────────────────────────────────┘
+
+FONT RECOMMENDATIONS:
+  • Title: Bold sans-serif (Inter, Poppins, or Montserrat Black)
+  • Tagline: Regular weight, slightly larger (18-20px)
+  • CTAs: Medium weight with rounded button style
+
+TOOLS TO CREATE:
+  • Canva (recommended - use "Twitter Post" or "LinkedIn Banner" template)
+  • Figma (for precise control)
+  • Adobe Photoshop/Illustrator
+  • Screenshot of code + gradient overlay

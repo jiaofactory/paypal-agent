@@ -1,0 +1,213 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    FEATURE HIGHLIGHT CARDS - VISUAL LAYOUT
+═══════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  ┌────────────────────────────────────────────────────────────────────────┐ │
+│  │                     ✨  CORE FEATURES  ✨                               │ │
+│  └────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│  ┌──────────────────────┐  ┌──────────────────────┐  ┌──────────────────────┐│
+│  │                      │  │                      │  │                      ││
+│  │   💳 CREATE LINKS    │  │   🔍 CHECK STATUS    │  │   🔔 WEBHOOKS        ││
+│  │                      │  │                      │  │                      ││
+│  │   ━━━━━━━━━━━━━━━━   │  │   ━━━━━━━━━━━━━━━━   │  │   ━━━━━━━━━━━━━━━━   ││
+│  │                      │  │                      │  │                      ││
+│  │   Generate reusable  │  │   Real-time payment  │  │   Instant payment    ││
+│  │   PayPal checkout    │  │   status tracking    │  │   notifications      ││
+│  │   links in seconds   │  │   via Orders API     │  │   with verification  ││
+│  │                      │  │                      │  │                      ││
+│  │   ━━━━━━━━━━━━━━━━   │  │   ━━━━━━━━━━━━━━━━   │  │   ━━━━━━━━━━━━━━━━   ││
+│  │                      │  │                      │  │                      ││
+│  │   Code Example:      │  │   Code Example:      │  │   Code Example:      ││
+│  │   ─────────────      │  │   ─────────────      │  │   ─────────────      ││
+│  │   link = paypal      │  │   status = paypal    │  │   @app.route(...)    ││
+│  │   .create_payment_   │  │   .check_payment_    │  │   def webhook():     ││
+│  │   link(amount=...)   │  │   status(order_id)   │  │     if verify():     ││
+│  │                      │  │                      │  │       process()      ││
+│  │   [ 📖 Learn More ]  │  │   [ 📖 Learn More ]  │  │   [ 📖 Learn More ]  ││
+│  │                      │  │                      │  │                      ││
+│  └──────────────────────┘  └──────────────────────┘  └──────────────────────┘│
+│                                                                             │
+│  ┌──────────────────────┐  ┌──────────────────────┐  ┌──────────────────────┐│
+│  │                      │  │                      │  │                      ││
+│  │   🧪 SANDBOX MODE    │  │   🌍 MULTI-CURRENCY  │  │   🔒 SECURE BY       ││
+│  │                      │  │                      │  │      DEFAULT         ││
+│  │   ━━━━━━━━━━━━━━━━   │  │   ━━━━━━━━━━━━━━━━   │  │   ━━━━━━━━━━━━━━━━   ││
+│  │                      │  │                      │  │                      ││
+│  │   Test safely with   │  │   Accept payments    │  │   Webhook signature  ││
+│  │   PayPal sandbox     │  │   in 25+ currencies  │  │   verification       ││
+│  │   before going live  │  │   USD EUR GBP JPY    │  │   included           ││
+│  │                      │  │                      │  │                      ││
+│  │   ━━━━━━━━━━━━━━━━   │  │   ━━━━━━━━━━━━━━━━   │  │   ━━━━━━━━━━━━━━━━   ││
+│  │                      │  │                      │  │                      ││
+│  │   ✓ No real money    │  │   ✓ Auto conversion  │  │   ✓ PayPal-verified  ││
+│  │   ✓ Test cards       │  │   ✓ Local pricing    │  │   ✓ Fraud protection ││
+│  │   ✓ Safe debugging   │  │   ✓ Global reach     │  │   ✓ Production-ready ││
+│  │                      │  │                      │  │                      ││
+│  │   [ 🧪 Test Mode ]   │  │   [ 💱 Currencies ]  │  │   [ 🔐 Security ]    ││
+│  │                      │  │                      │  │                      ││
+│  └──────────────────────┘  └──────────────────────┘  └──────────────────────┘│
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+                         INDIVIDUAL CARD DESIGNS
+═══════════════════════════════════════════════════════════════════════════════
+
+CARD 1: CREATE PAYMENT LINKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│                              ┌──────────┐                                   │
+│                              │  💳      │                                   │
+│                              │ PAYPAL   │                                   │
+│                              └──────────┘                                   │
+│                                                                             │
+│                    ┌─────────────────────────────┐                          │
+│                    │   CREATE PAYMENT LINKS      │                          │
+│                    └─────────────────────────────┘                          │
+│                                                                             │
+│         Generate reusable PayPal checkout links in seconds                  │
+│                                                                             │
+│    ┌─────────────────────────────────────────────────────────────────┐      │
+│    │  link = paypal.create_payment_link(                              │      │
+│    │      amount="29.99",                                             │      │
+│    │      currency="USD",                                             │      │
+│    │      product_name="AI Service"                                   │      │
+│    │  )                                                               │      │
+│    └─────────────────────────────────────────────────────────────────┘      │
+│                                                                             │
+│         ✅ One-time setup    ✅ Reusable links    ✅ Custom branding        │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+COLOR: Blue gradient (#003087 → #0070E0)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CARD 2: CHECK PAYMENT STATUS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│                           ┌──────────┐                                      │
+│                           │   🔍     │                                      │
+│                           │  STATUS  │                                      │
+│                           └──────────┘                                      │
+│                                                                             │
+│                   ┌─────────────────────────────┐                           │
+│                   │   CHECK PAYMENT STATUS      │                           │
+│                   └─────────────────────────────┘                           │
+│                                                                             │
+│        Real-time payment tracking via PayPal Orders API                     │
+│                                                                             │
+│    ┌─────────────────────────────────────────────────────────────────┐      │
+│    │  status = paypal.check_payment_status("5O190127TN364715T")      │      │
+│    │  print(status['status'])  # APPROVED | COMPLETED | PENDING       │      │
+│    └─────────────────────────────────────────────────────────────────┘      │
+│                                                                             │
+│         ✅ Live updates    ✅ Full details    ✅ Payer info                 │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+COLOR: Purple gradient (#6B46C1 → #9333EA)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CARD 3: WEBHOOK NOTIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│                          ┌──────────┐                                       │
+│                          │   🔔     │                                       │
+│                          │ WEBHOOK  │                                       │
+│                          └──────────┘                                       │
+│                                                                             │
+│                  ┌─────────────────────────────┐                            │
+│                  │   INSTANT NOTIFICATIONS     │                            │
+│                  └─────────────────────────────┘                            │
+│                                                                             │
+│       Get notified instantly when payments are received                     │
+│                                                                             │
+│    ┌─────────────────────────────────────────────────────────────────┐      │
+│    │  @app.route('/webhooks/paypal', methods=['POST'])               │      │
+│    │  def handle_webhook():                                          │      │
+│    │      result = paypal.handle_webhook(payload)                    │      │
+│    │      if result['event_type'] == 'PAYMENT.CAPTURE.COMPLETED':    │      │
+│    │          fulfill_order()  # 🚀                                  │      │
+│    └─────────────────────────────────────────────────────────────────┘      │
+│                                                                             │
+│         ✅ Auto-verified    ✅ Event types    ✅ Instant alerts             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+COLOR: Green gradient (#059669 → #10B981)
+
+═══════════════════════════════════════════════════════════════════════════════
+                    CARD DESIGN SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+CARD DIMENSIONS:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│   Individual Card: 350 x 450 pixels (portrait)                              │
+│   OR: 400 x 300 pixels (landscape)                                          │
+│                                                                             │
+│   Card Grid (6 cards): 1200 x 800 pixels                                    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+CARD STYLING:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│   Background:                                                               │
+│   • Gradient from top to bottom (use feature color)                         │
+│   • Slight transparency or glassmorphism effect                             │
+│   • Border: 1px solid rgba(255,255,255,0.1)                                 │
+│                                                                             │
+│   Icon:                                                                     │
+│   • Size: 64x64px                                                           │
+│   • Background: White circle with 20% opacity                               │
+│   • Icon color: White or light color                                        │
+│                                                                             │
+│   Title:                                                                    │
+│   • Font: Bold, 20-24px                                                     │
+│   • Color: White                                                            │
+│   • All caps, letter-spacing: 1px                                           │
+│                                                                             │
+│   Description:                                                              │
+│   • Font: Regular, 14-16px                                                  │
+│   • Color: rgba(255,255,255,0.85)                                           │
+│                                                                             │
+│   Code Block:                                                               │
+│   • Background: rgba(0,0,0,0.3)                                             │
+│   • Border-radius: 8px                                                      │
+│   • Font: Monospace, 12px                                                   │
+│   • Color: #7EE787 (light green for code)                                   │
+│                                                                             │
+│   Feature List:                                                             │
+│   • Checkmarks: Green (#22C55E)                                             │
+│   • Text: White                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+COLOR PALETTE BY FEATURE:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│   Create Links:    #003087 → #0070E0 (PayPal Blue)                          │
+│   Check Status:    #6B46C1 → #9333EA (Purple)                               │
+│   Webhooks:        #059669 → #10B981 (Green)                                │
+│   Sandbox:         #EA580C → #F97316 (Orange)                               │
+│   Multi-currency:  #0891B2 → #06B6D4 (Cyan)                                 │
+│   Security:        #DC2626 → #EF4444 (Red)                                  │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+RECOMMENDED TOOLS:
+  • Canva: Use "Social Media Post" template, create grid layout
+  • Figma: Auto-layout for responsive cards
+  • Adobe Illustrator: For precise vector icons

@@ -1,0 +1,170 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    CODE EXAMPLE SCREENSHOT - TERMINAL STYLE
+═══════════════════════════════════════════════════════════════════════════════
+
+Screenshot 1: Quick Start Example
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  user@jiao-factory:~$ python3                                                │
+│  Python 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]                  │
+│  >>> from paypal_agent import PayPalAgent                                    │
+│  >>>                                                                         │
+│  >>> # Initialize the agent                                                  │
+│  >>> paypal = PayPalAgent()                                                  │
+│  >>>                                                                         │
+│  >>> # Create a payment link in seconds                                      │
+│  >>> link = paypal.create_payment_link(                                      │
+│  ...     amount="29.99",                                                     │
+│  ...     currency="USD",                                                     │
+│  ...     description="AI Consultation - 1 Hour",                             │
+│  ...     product_name="1-Hour AI Consultation"                               │
+│  ... )                                                                       │
+│  >>>                                                                         │
+│  >>> print(f"Payment link: {link['url']}")                                   │
+│  💳 Payment link: https://www.paypal.com/checkoutnow?token=5O190127TN364715T│
+│  >>>                                                                         │
+│  >>> # Check payment status anytime                                          │
+│  >>> status = paypal.check_payment_status(link['order_id'])                  │
+│  >>> print(f"Status: {status['status']}")                                    │
+│  📊 Status: APPROVED                                                         │
+│  >>>                                                                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+COLOR SCHEME FOR TERMINAL:
+  • Background: #1e1e1e (VS Code dark)
+  • Prompt: #0e639c (blue)
+  • Keywords: #569cd6 (light blue)
+  • Strings: #ce9178 (orange)
+  • Comments: #6a9955 (green)
+  • Output: #d4d4d4 (white)
+  • Emojis: Full color
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Screenshot 2: Full Payment Flow Example
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  $ python3 payment_flow.py                                                   │
+│                                                                              │
+│  ╔═══════════════════════════════════════════════════════════════════════╗   │
+│  ║                 PayPal Payment Agent - Demo Flow                      ║   │
+│  ╚═══════════════════════════════════════════════════════════════════════╝   │
+│                                                                              │
+│  Step 1: Creating payment link...                                            │
+│  ✅ Payment link created!                                                    │
+│     Order ID: 5O190127TN364715T                                              │
+│     URL: https://www.paypal.com/checkoutnow?token=5O190127TN364715T          │
+│     Amount: $99.00 USD                                                       │
+│                                                                              │
+│  Step 2: Waiting for customer payment...                                     │
+│  ⏳ Polling for payment status...                                            │
+│                                                                              │
+│  [5s]  Status: CREATED      → Waiting...                                     │
+│  [10s] Status: CREATED      → Waiting...                                     │
+│  [15s] Status: APPROVED     → Customer approved! 🎉                          │
+│                                                                              │
+│  Step 3: Capturing payment...                                                │
+│  ✅ Payment captured successfully!                                           │
+│     Capture ID: CAP-8XJ29PL29                                                │
+│     Net Amount: $96.05                                                       │
+│     PayPal Fee: $2.95                                                        │
+│                                                                              │
+│  Step 4: Payment complete!                                                   │
+│  🎉 Transaction successful! Funds received.                                  │
+│                                                                              │
+│  ─────────────────────────────────────────────────────────────────────────   │
+│  Customer: john@example.com                                                  │
+│  Payment ID: PAYID-ABCDEF123456                                              │
+│  Completed: 2024-01-15 14:32:18 UTC                                          │
+│  ─────────────────────────────────────────────────────────────────────────   │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Screenshot 3: Webhook Handler Code
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  webhook_handler.py                                          [python]        │
+│  ─────────────────────────────────────────────────────────────────────────   │
+│  1  from flask import Flask, request, jsonify                                  │
+│  2  from paypal_agent import PayPalAgent                                       │
+│  3                                                                            │
+│  4  app = Flask(__name__)                                                      │
+│  5  paypal = PayPalAgent()                                                     │
+│  6                                                                            │
+│  7  @app.route('/webhooks/paypal', methods=['POST'])                          │
+│  8  def handle_paypal_webhook():                                               │
+│  9      # ✓ Verify webhook authenticity                                        │
+│  10     if not paypal.verify_webhook(request.headers, request.data):          │
+│  11         return jsonify({"error": "Invalid signature"}), 400               │
+│  12                                                                            │
+│  13     # ✓ Process the webhook payload                                       │
+│  14     payload = request.get_json()                                          │
+│  15     result = paypal.handle_webhook(payload)                               │
+│  16                                                                            │
+│  17     # ✓ Handle payment completion                                         │
+│  18     if result['event_type'] == 'PAYMENT.CAPTURE.COMPLETED':               │
+│  19         print(f"💰 Payment received: ${result['amount']}")                 │
+│  20                                                                            │
+│  21         # 🚀 Trigger your fulfillment logic here!                         │
+│  22         fulfill_order(result['custom_id'])                                │
+│  23         send_confirmation_email(result['payer_email'])                    │
+│  24                                                                            │
+│  25     return jsonify({"status": "ok"}), 200                                 │
+│  ─────────────────────────────────────────────────────────────────────────   │
+│                                                                              │
+│  $ flask run --port=5000                                                     │
+│   * Running on http://localhost:5000                                          │
+│   * Webhook endpoint ready: /webhooks/paypal                                  │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+                    VISUAL CREATION RECOMMENDATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+TOOLS FOR CODE SCREENSHOTS:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  1. CARBON (carbon.now.sh) - FREE ★★★★★                                    │
+│     • Paste code, get beautiful images                                      │
+│     • Themes: One Dark, VS Code, Dracula                                    │
+│     • Export: PNG, SVG                                                      │
+│     • Add: Window frame, padding, shadows                                   │
+│                                                                             │
+│  2. RAYSO (ray.so) - FREE ★★★★★                                             │
+│     • Similar to Carbon, more gradients                                     │
+│     • Good for social media sharing                                         │
+│                                                                             │
+│  3. CHALK.IST - FREE ★★★★☆                                                  │
+│     • Modern, beautiful presets                                             │
+│     • Good for terminal/command examples                                    │
+│                                                                             │
+│  4. SCREENSHOT ACTUAL TERMINAL                                              │
+│     • Use: iTerm2 (Mac), Windows Terminal, or VS Code terminal              │
+│     • Pros: 100% authentic look                                             │
+│     • Tips: Increase font size (18-20px), use dark theme                    │
+│                                                                             │
+│  5. SNAPPIFY (snappify.io) - PAID                                           │
+│     • Professional code presentation                                        │
+│     • Animations available                                                  │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+EXPORT SETTINGS:
+  • Width: 800-1000px (readable on mobile)
+  • Font: Fira Code, JetBrains Mono, or Cascadia Code
+  • Font size: 14-16px
+  • Line numbers: ON
+  • Window controls: Mac style (red/yellow/green dots)
+  • Shadow: Subtle drop shadow
+  • Border-radius: 8-12px
+
+FILE NAMING:
+  • paypal_agent_quickstart.png
+  • paypal_agent_payment_flow.png
+  • paypal_agent_webhook_handler.png

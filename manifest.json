@@ -1,0 +1,52 @@
+{
+  "name": "paypal-agent",
+  "version": "0.1.0",
+  "description": "Accept PayPal payments via AI agents - generate payment links, check status, and receive webhook notifications",
+  "author": "Jiao Factory",
+  "license": "MIT",
+  "price": 9.99,
+  "currency": "USD",
+  "category": "payments",
+  "tags": ["paypal", "payments", "invoicing", "ecommerce", "webhooks", "automation"],
+  "compatibility": {
+    "openclaw": ">=1.0.0",
+    "python": ">=3.8"
+  },
+  "entry_point": "paypal_agent.py",
+  "main_class": "PayPalAgent",
+  "dependencies": [
+    "requests>=2.28.0",
+    "python-dotenv>=0.19.0",
+    "cryptography>=3.4.8"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiaofactory/paypal-agent"
+  },
+  "documentation": "SKILL.md",
+  "examples": [
+    "examples.py",
+    "webhook_handler.py"
+  ],
+  "clawhub": {
+    "verified": false,
+    "featured": false,
+    "featured_reason": null
+  },
+  "support": {
+    "email": "support@jiaofactory.com",
+    "issues": "https://github.com/jiaofactory/paypal-agent/issues"
+  },
+  "changelog": {
+    "0.1.0": {
+      "date": "2024-01-15",
+      "changes": [
+        "Initial MVP release",
+        "Create payment links via Orders v2 API",
+        "Check payment status",
+        "Webhook handling with signature verification",
+        "Sandbox and live mode support"
+      ]
+    }
+  }
+}
