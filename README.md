@@ -52,8 +52,26 @@ print(f"🔗 Payment Link: {link['url']}")
 
 ## 🛠️ Installation
 
+### Option 1: Download from Gumroad (Easiest)
+
+1. **Download** `paypal-agent.tar.gz` from Gumroad
+2. **Extract** the archive:
 ```bash
-clawhub install paypal-agent
+tar -xzf paypal-agent.tar.gz
+cd paypal-agent
+```
+3. **Install dependencies**:
+```bash
+pip install -r requirements.txt
+```
+4. **Configure** (see Configuration below)
+
+### Option 2: Clone from GitHub
+
+```bash
+git clone https://github.com/jiaofactory/paypal-agent.git
+cd paypal-agent
+pip install -r requirements.txt
 ```
 
 ### Prerequisites
